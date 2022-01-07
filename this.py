@@ -1,0 +1,1 @@
+https://static.fullstack-bootcamp.com/module-1/hero-bg.jpg
