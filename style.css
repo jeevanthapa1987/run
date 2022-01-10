@@ -50,15 +50,18 @@ body {
   background-color: #fce138;   
   width:100%;
   padding: 40px 35px; 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   }
   footer h2{
-      display: inline;
+     
       color:#024e76;
       font-size: 30px;
       margin: 0;
   }
   footer div {
-    float: right;
+   
     line-height: 1.5;
     text-align: right;
   }
@@ -75,11 +78,15 @@ body {
     height: 600px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .hero-form{
     background: #fce138;
     padding: 20px;
-    width: 500px;
+    width:40%;
+    margin: 3.5%;
     color:#024e76;
     border:#024e76 3px solid;
   position: absolute;
@@ -244,3 +251,16 @@ text-align: center;
       color:#fce138;
   }
   /*REACH OUT STYLES END*/
+  .hero-cta{
+      width: 35%;
+      text-align: right;
+      margin: 3.5%;
+      color:#fff;
+      font-size: 18px;
+      line-height: 1.3;
+  }
+  .hero-cta h2{
+      font-style: italic;
+      font-size: 55px;
+      color:#fce138;
+  }
