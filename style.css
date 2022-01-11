@@ -1,5 +1,4 @@
 
-  
   *{
     margin: 0;
     padding: 0;
@@ -11,57 +10,44 @@ body {
   }
   header{
       padding: 20px 35px;
-  background-color: #39a6b2;   
-  display: flex; 
-  justify-content: space-between;
-  flex-wrap: wrap;
+  background-color: #39a6b2;    
   }
   header h1{
       font-weight: bold;
       font-size: 36px;
       color: #fce138;
       margin: 0;
-      
+      display: inline;
   }
   header a{
       color:#fce138;
       text-decoration: none;
   }
-
   header nav{
-     margin:7px 0;
-  }
-  header nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      list-style: none;
-      align-items: center;
+      float:right;
+      margin:7px 0;
   }
   header nav ul li{
-      
+      display:inline;
   }
   header nav ul li a{
       font-weight: lighter;
-      font-size: 1.55vw;
+      font-size: 22px;
       margin: 0 30px;
   }
   footer{
   background-color: #fce138;   
   width:100%;
   padding: 40px 35px; 
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   }
   footer h2{
-     
+      display: inline;
       color:#024e76;
       font-size: 30px;
       margin: 0;
   }
   footer div {
-   
+    float: right;
     line-height: 1.5;
     text-align: right;
   }
@@ -74,19 +60,15 @@ body {
   }
   /* Hero Style Start */
 .hero {
-    background-image: url(" https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg");
+    background-image: url("https://static.fullstack-bootcamp.com/module-1/hero-bg.jpg");
     height: 600px;
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
   .hero-form{
     background: #fce138;
     padding: 20px;
-    width:40%;
-    margin: 3.5%;
+    width: 500px;
     color:#024e76;
     border:#024e76 3px solid;
   position: absolute;
@@ -251,16 +233,3 @@ text-align: center;
       color:#fce138;
   }
   /*REACH OUT STYLES END*/
-  .hero-cta{
-      width: 35%;
-      text-align: right;
-      margin: 3.5%;
-      color:#fff;
-      font-size: 18px;
-      line-height: 1.3;
-  }
-  .hero-cta h2{
-      font-style: italic;
-      font-size: 55px;
-      color:#fce138;
-  }
