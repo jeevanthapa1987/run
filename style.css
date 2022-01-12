@@ -14,6 +14,15 @@ body {
   display: flex;
   justify-content: space-between;   
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  background-image: url("https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg");
+    
+  background-size: cover;  
+  background-position: center;
+  background-attachment: fixed;
+background-position: 80%;
   }
   header h1{
       font-weight: bold;
@@ -74,14 +83,14 @@ body {
   }
   /* Hero Style Start */
 .hero {
-    background-image: url("https://static.fullstack-bootcamp.com/module-2/flipped-hero-image.jpg");
     
-    background-size: cover;
     
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-attachment: fixed;
+background-position: 80%;
   }
 .hero-cta{
     width: 35%;
@@ -106,6 +115,7 @@ body {
     border:#024e76 3px solid;
     width: 40%;
     margin: 3.5%;
+    border-radius: 15px;
   
 }
 .hero-form p{
@@ -119,6 +129,13 @@ body {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
+}
+/* create a new rule for focus state */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 .hero-form label{
     margin: 0 5px;
@@ -129,6 +146,7 @@ body {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
 }
   /* Hero Style End */
   .intro{
@@ -325,7 +343,26 @@ body {
     margin-bottom: 15px;
     
     margin-top: 5px   ;
+    border-radius: 10px;
   }
+  /* create a new css rule for focus state */
+.contact-form input:focus, .contact-form textarea:focus {
+
+}
+.step:last-child {
+  border-bottom: 1px solid #39a6b2;
+}
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
+}
+.step {
+  /* re-add alongside existing declarations */
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:last-child {
+  border-bottom: none;
+}
   .contact-form button{
     width: 100%;
 
@@ -336,17 +373,56 @@ color: #024e76;
 text-align: center;
 
 padding: 15px 0;
-
+border-radius: 10px;
 font-size: 16px;
   }
   /*REACH OUT STYLES END*/
   .flex-row {
     display: flex;
   }
+  .some-class {
+    text-shadow: 5px 10px 15px black;
+    
+  }
+  /* default state */
+button {
+  background: white;
+}
+
+/* mouse is hovering over button */
+button:hover {
+  background: red;
+}
+
+/* button is in focus because it was the most recently clicked element on the page */
+button:focus {
+  background: green;
+}
+
+/* user is actively pressing the cursor down on the button */
+button:active {
+  background: blue;
+}
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
   @media screen and (max-width: 980px) {
     header {
       padding-bottom: 0;
       justify-content: center;
+      position: relative;
     }
   
     header h1 {
@@ -444,3 +520,4 @@ font-size: 16px;
     order: 3;
   }  
 }
+
