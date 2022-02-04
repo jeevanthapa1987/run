@@ -3,37 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="secondary-style.css">  
     <title>Privacy Policy-Run Buddy</title>
   </head>
   <body>
-      <!-- navigation -->
-<header>
+     <!--navigation--> 
+   <header>
     <h1>
-    <a href="./">RUN BUDDY</a></h1>
+      <a href="/">RUN BUDDY</a></h1>
     <nav>
-    <ul>
-<li>
-<a href="./index.html#what-we-do">What We Do</a>
-</li>
-<li>
-    <a href="#what-you-do">What you do</a>
-</li>
-<li>
-    <a href="#your-trainers">Your Trainers</a>
-</li>
-<li>
-    <a href="#reach-out">Reach Out</a>
-</li>
-    </ul>
+     <ul>
+   <li>
+     <a href="#what-we-do">What We Do</a>
+   </li>
+   <li>
+     <a href="#what-you-do">What You Do</a>
+   </li>
+   <li>
+     <a href="#your-trainers">Your Trainers</a>
+   </li>
+   <li>
+     <a href="#reach-out">Reach Out</a>
+   </li>
+     </ul>
     </nav>
   </header>
-  <div class="hero hero-secondary">
+
+   
+  
+    <!--hero/jumbotron-->
+   <section class="hero">
+    <div class="hero-form">
+    <h3>Get Started Today</h3>
+    <p>Fill out this form and one of out trainers will schedule a consult.</p>
+    <!--Add form element-->
+    <form>
+    <label for="name">Enter full name:</label>
+    <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
+    <label for="email">Enter email address:</label>
+    <input type="email" placeholder="Email Address" name="email" id="email" class="form-input">
+    <label for="phone">Enter a telephone number:</label>
+    <input type="tel" placeholder="phone Number" name="phone" id="phone" class="form-input">
+    <p>
+      Have you worked out with a trainer before ?
+      <input type="radio" name="trainer-confirm" id="trainer-yes"/>
+      <label for="trainer-yes">Yes</label>
+      <input type="radio" name="trainer-confirm" id="trainer-no"/>
+      <label for="trainer-no">No</label>   
+    </p>
+    <p>
+      <label for="checkbox">
+      I acknowledge that I am at least 18 years of age.
+      </label>
+      <input type="checkbox" name="age-confirm" id="checkbox"/>
+    </p>
+    <button type="submit">
+      Get running
+    </button>
+    </form>
+    </div>
+
     <h2 class="page-title">
       Privacy Policy
     </h2>
-    Website Terms of Use<br><br>
+  </section>
+  <article class="secondary-content">
+    <div class="hero-secondary">
+    Website Terms of Use
 
-Version 1.0<br><br>
+Version 1.0
 
 The Run Buddy website located at https://runbuddy.io is a copyrighted work belonging to Run Buddy. Certain features of the Site may be subject to additional guidelines, terms, or rules, which will be posted on the Site in connection with such features.
 
@@ -134,19 +172,20 @@ Entire Terms. These Terms constitute the entire agreement between you and us reg
 Your Privacy. Please read our Privacy Policy.
 
 Copyright/Trademark Information. Copyright Â©. All rights reserved. All trademarks, logos and service marks displayed on the Site are our property or the property of other third-parties. You are not permitted to use these Marks without our prior written consent or the consent of such third party which may own the Marks.
-<br><br><br>
-<h4 >Contact Information</h4>
-Address: 55 Main Street, Some Town, CA, 12345
-<br>
-<a href="#"> Email: info@runbuddy.io</a>
-  </div>
 
-    <footer>
-        <h2>❤️ Made with love by Run Buddy.</h2>
-        <div>
-            <a href="#">Read Our Privacy Policy</a><br />
-            &copy; 2019 Run Buddy, Inc.
-          </div>
-      </footer>
+Contact Information
+Address: 55 Main Street, Some Town, CA, 12345
+
+Email: info@runbuddy.io
+</div>
+  </article>
+  <!--footer-->
+  <footer>
+    <h2> ❤️ Made with love by Run Buddy.</h2>
+    <div>
+<a href="#">Read Our Privacy Policy</a> <br>
+&copy;2019 Run Buddy,Inc.
+    </div>
+  </footer>   
   </body>
 </html>
